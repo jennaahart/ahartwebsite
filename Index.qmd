@@ -4,15 +4,21 @@ format: html
 editor: visual
 ---
 
-# Home
+# Jenna Ahart
+
+Science Writing and Communications
 
 ### Work Samples
+
+[Github](https://github.com/jennaahart)
+
+[Resume](https://jennaahart.wixsite.com/portfolio/resume)
 
 Academic Work
 
 Journalism Work
 
-![](Ahart_Jenna_SED_5133/Ahart_Jenna_SED_5250.jpg){width="288"}
+![](IMG_0036.PNG){width="306"}
 
 ```{r}
 1 + 1
