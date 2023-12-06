@@ -8,8 +8,6 @@ editor: visual
 
 Science Writing and Communications
 
-bio
-
 ### Work Samples
 
 [Github](https://github.com/jennaahart)
