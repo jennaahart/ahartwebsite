@@ -1,0 +1,28 @@
+---
+title: "Home Page"
+format: html
+editor: visual
+---
+
+# Home
+
+### Work Samples
+
+Academic Work
+
+Journalism Work
+
+![](Ahart_Jenna_SED_5133/Ahart_Jenna_SED_5250.jpg){width="288"}
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
