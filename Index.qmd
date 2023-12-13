@@ -8,11 +8,15 @@ editor: visual
 
 Science Writing and Communications
 
+##### About Me
+
+I'm a student at the George Washington University studying journalism with a minor in astrophysics. I know that pairing can appear disjointed at first glance. But it's through this logical and linguistic fusion that I've handcrafted my very own bifocal writing lens---I'm eager to focus in and unravel intricate topics, but I can also tie them back up with creative conciseness. Experienced in copywriting, digital media production, and journalism, I'm a trained writer and editor here to make complex ideas not just comprehensible, but captivating.
+
 ![](IMG_0036.PNG){width="306"}
 
 ### Work Samples
 
-Rstudio Analysis
+[Rstudio Analysis](https://jennaahart.github.io/ahartwebsite/paanalysis.html)
 
 [Github](https://github.com/jennaahart)
 
@@ -24,15 +28,6 @@ Rstudio Analysis
 
 ### Contact Information
 
-```{r}
-1 + 1
-```
+Phone: 484-273-8244
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+Email: jennaahart\@gwu.edu

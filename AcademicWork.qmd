@@ -6,6 +6,8 @@ editor: visual
 
 [Home](https://jennaahart.github.io/ahartwebsite/Index.html)
 
+*The following is an essay I wrote for a Journalism Theory and Practice course, discussing coverage of a recently discovered asteroid and how it abides by journalistic principles.*
+
 ## Journalism Theory and Practice Midterm
 
 This month, Jackie Wattles and Kristin Fisher wrote a piece for CNN entitled "NASA tracks a newly discovered asteroid that has a 'small chance' of hitting Earth in 2046." The article summarizes NASA's research on asteroid 2023 DW, which has been predicted to come near Earth in February 2046. Still, the chance of impact is less than one in 500, and the article clarifies that the threat is relatively negligible.\[1\]
