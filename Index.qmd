@@ -8,7 +8,11 @@ editor: visual
 
 Science Writing and Communications
 
+![](IMG_0036.PNG){width="306"}
+
 ### Work Samples
+
+Rstudio Analysis
 
 [Github](https://github.com/jennaahart)
 
@@ -18,7 +22,7 @@ Science Writing and Communications
 
 [Journalism Work](https://jennaahart.github.io/ahartwebsite/journalismwork.html)
 
-![](IMG_0036.PNG){width="306"}
+### Contact Information
 
 ```{r}
 1 + 1

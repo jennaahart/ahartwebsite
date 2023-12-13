@@ -1,0 +1,74 @@
+---
+title: "paanalysis"
+format: html
+editor: visual
+---
+
+## Pennsylvania County Analysis
+
+[Home](https://jennaahart.github.io/ahartwebsite/Index.html).
+
+The following walks through how I created an interactive map of PA counties based on their median ages.
+
+First, I downloaded the necessary packages so that my code will run correctly.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(tigris)
+library(sf)
+library(tidycensus)
+library(htmltools)
+library(janitor)
+library(here)
+library(mapview)
+library(leafsync)
+library(leaflet.extras2)
+options(tigris_class = "sf")
+```
+
+I then had to enter my US census key to access information from the most recent census.
+
+```{r}
+census_api_key("2a6f8c21a30d3024e038d67d7d4eba647dc79cd4", overwrite=TRUE)
+```
+
+Next, I chose the variables from the census that I will be using. I decided to focus on median age.
+
+```{r}
+my_vars <- c(median_age = "B01002_001")
+
+```
+
+Now I will put all my data together. I created a new dataset for Pennsylvania counties with geographic information. I selected my previously chosen variables, and chose county as the geographic unit with PA as the selected state. Some of the variables have an "M" or "E" at the end, indicating mean and error. I cleaned the data up by getting rid of those letters.
+
+```{r}
+pa_counties_withgeo <- get_acs(geography = "county",
+                       variables = c(my_vars),
+                       state = "PA",
+                       output = "wide",
+                       geometry = TRUE)
+
+pa_counties_withgeo <- pa_counties_withgeo %>%
+  select(-ends_with("M"))
+
+colnames(pa_counties_withgeo) <- sub("E$", "", colnames(pa_counties_withgeo)) # $ means end of string only
+
+pa_counties_withgeo
+
+```
+
+Finally, it's time to create the map. I created my own labels so that when the mouse hovers over a county, it shows the county and median age. Using the mapview tool, I selected to create a map of Pennsylvania counties using median age and the labels I created. I also decided to make the map blue.
+
+```{r}
+
+
+mylabel <- glue::glue("{pa_counties_withgeo$NAM} {pa_counties_withgeo$median_age}")
+
+mapview(pa_counties_withgeo, zcol = "median_age",
+        col.regions = RColorBrewer::brewer.pal(9, "Blues"), 
+        alpha.regions = 1,
+        label = mylabel)
+
+```
